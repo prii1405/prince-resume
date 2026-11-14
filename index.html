@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince Kumar | Professional Resume</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e9eef5;
+        font-family: Arial, sans-serif;
+        color: #243247;
+        padding: 20px;
+      }
+
+      .buttons {
+        text-align: center;
+        margin-bottom: 18px;
+      }
+
+      button {
+        background: #176b87;
+        color: white;
+        border: none;
+        padding: 11px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .resume {
+        width: 210mm;
+        min-height: 297mm;
+        background: white;
+        margin: auto;
+        padding: 15mm 17mm;
+        box-shadow: 0 5px 25px #0002;
+      }
+
+      /* HEADER */
+
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #176b87;
+      }
+
+      .profile {
+        width: 110px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .header-content {
+        flex: 1;
+      }
+
+      .role {
+        color: #176b87;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      h1 {
+        font-size: 29px;
+        color: #17233b;
+        margin-bottom: 7px;
+      }
+
+      .contact {
+        font-size: 10.5px;
+        line-height: 1.7;
+        color: #536176;
+      }
+
+      a {
+        color: #176b87;
+        text-decoration: none;
+      }
+
+      /* SECTIONS */
+
+      section {
+        margin-top: 14px;
+      }
+
+      h2 {
+        font-size: 13px;
+        color: #176b87;
+        border-bottom: 1px solid #dce5ed;
+        padding-bottom: 5px;
+        margin-bottom: 8px;
+        letter-spacing: 0.8px;
+      }
+
+      p {
+        font-size: 11.5px;
+        line-height: 1.5;
+        color: #45546a;
+      }
+
+      .item {
+        margin-bottom: 7px;
+        font-size: 11.5px;
+        line-height: 1.5;
+      }
+
+      .item strong {
+        color: #243247;
+      }
+
+      /* SKILLS */
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+
+      .skills span {
+        background: #eaf4f7;
+        color: #176b87;
+        padding: 6px 10px;
+        border-radius: 15px;
+        font-size: 10.5px;
+        font-weight: bold;
+      }
+
+      /* PRINT */
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: white;
+        }
+
+        .buttons {
+          display: none;
+        }
+
+        .resume {
+          width: 210mm;
+          height: 297mm;
+          min-height: 297mm;
+          padding: 15mm 17mm;
+          margin: 0;
+          box-shadow: none;
+          overflow: hidden;
+        }
+      }
+
+      /* MOBILE */
+
+      @media screen and (max-width: 750px) {
+        body {
+          padding: 8px;
+        }
+
+        .resume {
+          width: 100%;
+          min-height: auto;
+          padding: 20px;
+        }
+
+        .profile {
+          width: 85px;
+          height: 95px;
+        }
+
+        h1 {
+          font-size: 23px;
+        }
+
+        .role {
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="buttons">
+      <button onclick="downloadPDF()">Download PDF</button>
+      <button onclick="downloadHTML()">Download HTML</button>
+    </div>
+
+    <div class="resume" id="resume">
+      <!-- HEADER -->
+
+      <div class="header">
+        <img src="prince_photo.png" class="profile" alt="Prince Kumar" />
+
+        <div class="header-content">
+          <div class="role">Biomedical &amp; Robotics Engineering Student</div>
+
+          <h1>Prince Kumar</h1>
+
+          <div class="contact">
+            Email: prince77395484@gmail.com<br />
+            Phone: 7739548425<br />
+
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/prince-kumar-94b0a5293">
+              LinkedIn Profile </a
+            ><br />
+
+            GitHub:
+            <a href="https://github.com/prii1405"> GitHub Profile </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+
+      <section>
+        <h2>PROFESSIONAL SUMMARY</h2>
+
+        <p>
+          Motivated 3rd-year Biomedical and Robotics Engineering student at
+          Muzaffarpur Institute of Technology with interest in Robotics, Medical
+          Imaging, Artificial Intelligence and Computer Vision. Interested in
+          developing practical technical skills through projects, internships
+          and professional learning.
+        </p>
+      </section>
+
+      <!-- EDUCATION -->
+
+      <section>
+        <h2>EDUCATION</h2>
+
+        <div class="item">
+          <strong>B.Tech - Biomedical and Robotics Engineering</strong>
+          <p>Muzaffarpur Institute of Technology | 3rd Year</p>
+        </div>
+
+        <div class="item">
+          <strong>Class XII - 2023</strong>
+          <p>MBBL Inter College, Muzaffarpur | 66%</p>
+        </div>
+
+        <div class="item">
+          <strong>Class X - 2021</strong>
+          <p>Premier Academy, Basauli, Kudhani, Muzaffarpur | 48%</p>
+        </div>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+
+      <section>
+        <h2>TECHNICAL SKILLS</h2>
+
+        <div class="item"><strong>Programming:</strong> Python</div>
+
+        <div class="item"><strong>Libraries:</strong> OpenCV</div>
+
+        <div class="item"><strong>Operating Systems:</strong> Linux, WSL</div>
+
+        <div class="item"><strong>Core Concepts:</strong> Computer Vision</div>
+
+        <div class="item">
+          <strong>Development Tools:</strong> VS Code, GitHub
+        </div>
+      </section>
+
+      <!-- INTERNSHIP -->
+
+      <section>
+        <h2>INTERNSHIP EXPERIENCE</h2>
+
+        <div class="item">
+          <strong>Robotics &amp; Automation Intern</strong>
+
+          <p>Hyperlon Motion Technologies</p>
+
+          <p>Winter Internship | 22 December 2025 - 2 January 2026</p>
+
+          <p>Duration: 2 Weeks | Grade: A | Performance: Very Good</p>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+
+      <section>
+        <h2>PROJECTS</h2>
+
+        <div class="item">
+          <strong>1. OpenCV Image Processing Project</strong>
+          <p>
+            Image processing and basic computer vision operations using Python
+            and OpenCV.
+          </p>
+        </div>
+
+        <div class="item">
+          <strong>2. Real-Time Camera Application</strong>
+          <p>
+            Camera-based image capture and real-time image processing using
+            OpenCV.
+          </p>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+
+      <section>
+        <h2>CERTIFICATIONS</h2>
+
+        <div class="item">3D Printing Technologies</div>
+
+        <div class="item">Machine Learning</div>
+
+        <div class="item">Robotic Welding</div>
+      </section>
+    </div>
+
+    <script>
+      // PDF DOWNLOAD
+
+      function downloadPDF() {
+        window.print();
+      }
+
+      // HTML DOWNLOAD
+
+      function downloadHTML() {
+        const htmlContent =
+          "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+
+        const blob = new Blob([htmlContent], { type: "text/html" });
+
+        const link = document.createElement("a");
+
+        link.href = URL.createObjectURL(blob);
+        link.download = "Prince_Kumar_Resume.html";
+
+        link.click();
+
+        setTimeout(() => {
+          URL.revokeObjectURL(link.href);
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
